@@ -35,3 +35,4 @@
 //console.log(message.length); //length - свойство, хранит длину строки
 //console.log(message.toLowerCase()); // все в нижнем регистре
 //console.log(message.toUpperCase()); // все в верхнем регистре
+//console.log(5 + 5);
