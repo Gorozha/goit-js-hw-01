@@ -2,19 +2,20 @@ const credits = 23580;
 const pricePerDroid = 3000;
 const CANCELED_BY_USER = 'Отменено пользователем!';
 const ACCESS_DENIED = 'Недостаточно средств на счету!';
-const orderPieces = prompt('enter ');
-let totalPrice = orderPieces * 3000; //общая цена заказа
-let balanceCredit = credits - totalPrice; // разница между кредитами и общей ценой заказа
+const orderPieces = prompt('enter amount ');
+let totalPrice = (orderPieces * pricePerDroid); //общая цена заказа
+let balanceCredit = (credits - totalPrice); // разница между кредитами и общей ценой заказа
 let message;
 
 // Write code under this line
-if (orderPieces === null) {
+if (orderPieces  === null) {
   message = CANCELED_BY_USER;
-} else if (credits < balanceCredit) {
+} else if (totalPrice > credits) {
+  //credits = credits - totalPrice;
   message = ACCESS_DENIED;
-} else if (credits > balanceCredit) {
+} else if (credits >= balanceCredit) {
   message =
-    'Вы купили ${orderPieces} дроидов, на счету осталось ${balanceCredit} кредитов';
+     `Вы купили ${orderPieces} дроидов, на счету осталось ${balanceCredit} кредитов;`
 }
 console.log(message);
 alert(message);
