@@ -1,4 +1,4 @@
-const countryName = prompt('enter country ');//"КитаЙ"; это уберем и поменяем на промпт
+/*const countryName = prompt('enter country ');//"КитаЙ"; это уберем и поменяем на промпт
 
 const CANCELED_BY_USER = 'Отменено пользователем!';
 const NO_DELIVERY = 'В выбранную страну доставка недоступна.';
@@ -35,4 +35,4 @@ if (price > 0) { // Write code on this line
   message = `Доставка в ${country} будет стоить ${price} кредитов`;
 }
 
-console.log(message);
+console.log(message);*/
